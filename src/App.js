@@ -50,7 +50,7 @@ function App() {
                                     fontSize: "60px",
                                 }}
                             >
-                                Signature Food
+                                Signature <span style={{fontFamily: "sans-serif", fontSize: "18px"}} >FOOD</span>
                             </div>
                         </div>
                     </div>
