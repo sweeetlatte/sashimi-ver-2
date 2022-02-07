@@ -25,9 +25,9 @@ function App() {
                     <div className="w20">
                         <div
                             style={{
-                                position: "fixed",
+                                position: "absolute",
                                 display: "flex",
-                                flexdirection: "column",
+                                flexDirection: "column",
                                 justifyContent: "flex-end",
                                 height: "57%",
                             }}
@@ -94,10 +94,10 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ paddingTop: "11.57%" }}>
                     <div className="w10">
                         <div>
-                            <div>Cooking Time</div>
+                            <div className="title-left">Cooking Time</div>
                             <div className="row">
                                 <img
                                     style={{ width: "22px", height: "22px" }}
@@ -108,7 +108,7 @@ function App() {
                             </div>
                         </div>
                         <div>
-                            <div>Serving</div>
+                            <div className="title-left">Serving</div>
                             <div className="row">
                                 <img
                                     style={{ width: "22px", height: "22px" }}
