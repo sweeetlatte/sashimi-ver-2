@@ -17,28 +17,28 @@ function App() {
         <div className="App">
             <div className="container">
                 <div className="row">
-                    <div className="w10">
-                        <div style={{ paddingTop: "46px" }}>
+                    <div className="w13">
+                        <div style={{ paddingTop: "51px" }}>
                             <img src={menuIcon} alt="menu icon" />
                         </div>
                     </div>
-                    <div className="w20">
+                    <div className="w16">
                         <div
                             style={{
                                 position: "absolute",
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "flex-end",
-                                height: "57%",
+                                height: "64%",
                             }}
                         >
                             <div
                                 style={{
                                     fontFamily: "Wilma",
                                     color: "#545454",
-                                    fontSize: " 7.313rem",
+                                    fontSize: " 8rem",
                                     letterSpacing: "-5px",
-                                    lineHeight: 0.9,
+                                    lineHeight: 0.85,
                                 }}
                             >
                                 Sashimi <br />
@@ -70,8 +70,8 @@ function App() {
                         >
                             <img
                                 style={{
-                                    marginTop: "-18%",
-                                    marginLeft: "15%",
+                                    marginTop: "-14%",
+                                    marginLeft: "14%",
                                 }}
                                 src={ink}
                                 alt="ink"
@@ -87,16 +87,16 @@ function App() {
                             }}
                         >
                             <img
-                                style={{ width: "98%" }}
+                                style={{ width: "97%" }}
                                 src={sashimiDish}
                                 alt="sashimi dish"
                             />
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{ paddingTop: "11.57%" }}>
-                    <div className="w10">
-                        <div>
+                <div className="row" style={{ paddingTop: "7%" }}>
+                    <div className="w13">
+                        <div style={{ paddingLeft: "4%" }}>
                             <div className="title-left">Cooking Time</div>
                             <div className="row">
                                 <img
@@ -106,34 +106,39 @@ function App() {
                                 />
                                 <div>1h 30m</div>
                             </div>
-                        </div>
-                        <div>
-                            <div className="title-left">Serving</div>
-                            <div className="row">
-                                <img
-                                    style={{ width: "22px", height: "22px" }}
-                                    src={peopleIcon}
-                                    alt="people icon"
-                                />
-                                <div>2 people</div>
+                            <div style={{ paddingTop: "42%" }}>
+                                <div className="title-left">Serving</div>
+                                <div className="row">
+                                    <img
+                                        style={{
+                                            width: "22px",
+                                            height: "22px",
+                                        }}
+                                        src={peopleIcon}
+                                        alt="people icon"
+                                    />
+                                    <div>2 people</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w40">
-                        <div>Ingredients</div>
-                        <ul>
-                            <li>
-                                1 pound fresh, sashimi-quality fish, such as
-                                yellowfin tuna or salmon
-                            </li>
-                            <li>2 teaspoons extra-virgin olive oil</li>
-                            <li>
-                                4 teaspoons shiro dashi or regular Japanese soy
-                                sauce
-                            </li>
-                            <li>2 teaspoons white sesame seeds</li>
-                            <li>1/2 teaspoon thinly sliced chives</li>
-                        </ul>
+                    <div className="w36">
+                        <div style={{}}>
+                            <div>Ingredients</div>
+                            <ul>
+                                <li>
+                                    1 pound fresh, sashimi-quality fish, such as
+                                    yellowfin tuna or salmon
+                                </li>
+                                <li>2 teaspoons extra-virgin olive oil</li>
+                                <li>
+                                    4 teaspoons shiro dashi or regular Japanese
+                                    soy sauce
+                                </li>
+                                <li>2 teaspoons white sesame seeds</li>
+                                <li>1/2 teaspoon thinly sliced chives</li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="w50 row">
                         <div>

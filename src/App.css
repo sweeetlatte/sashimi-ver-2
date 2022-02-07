@@ -8,12 +8,9 @@
     src: url(./assets/fonts/MrsSaintDelafield-Regular.ttf);
 }
 
-.App {
-}
-
 .container {
     width: 100%;
-    padding: 0 5.938rem;
+    padding: 0 6.5rem;
 }
 
 .row {
@@ -21,16 +18,20 @@
     flex-wrap: wrap;
 }
 
-.w10 {
-    width: 10%;
+.w13 {
+    width: 13.5%;
+}
+
+.w16 {
+    width: 16.5%;
 }
 
 .w20 {
     width: 20%;
 }
 
-.w40 {
-    width: 40%;
+.w36 {
+    width: 36.5%;
 }
 
 .w50 {
@@ -42,4 +43,11 @@
     font-size: 18px;
     color: #aab4b6;
     margin-bottom: 9px;
+}
+
+@media (min-width: 1366px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
 }
