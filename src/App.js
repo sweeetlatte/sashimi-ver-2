@@ -18,22 +18,72 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="w10">
-                        <img src={menuIcon} alt="menu icon" />
-                    </div>
-                    <div className="w40">
-                        <div>
-                            <img src={ink} alt="ink" />
+                        <div style={{ paddingTop: "46px" }}>
+                            <img src={menuIcon} alt="menu icon" />
                         </div>
-                        <div>
-                            <div>
+                    </div>
+                    <div className="w20">
+                        <div
+                            style={{
+                                position: "fixed",
+                                display: "flex",
+                                flexdirection: "column",
+                                justifyContent: "flex-end",
+                                height: "57%",
+                            }}
+                        >
+                            <div
+                                style={{
+                                    fontFamily: "Wilma",
+                                    color: "#545454",
+                                    fontSize: " 7.313rem",
+                                    letterSpacing: "-5px",
+                                    lineHeight: 0.9,
+                                }}
+                            >
                                 Sashimi <br />
                                 Recipe
                             </div>
-                            <div>Signature Food</div>
+                            <div
+                                style={{
+                                    fontFamily: "MrsSaintDelafield",
+                                    fontSize: "60px",
+                                }}
+                            >
+                                Signature Food
+                            </div>
                         </div>
                     </div>
-                    <div className="w50">
-                        <img src={sashimiDish} alt="sashimi dish" />
+                    <div className="w20">
+                        <div
+                            style={{
+                                zIndex: 0,
+                            }}
+                        >
+                            <img
+                                style={{
+                                    marginTop: "-18%",
+                                    marginLeft: "15%",
+                                }}
+                                src={ink}
+                                alt="ink"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="w50" style={{ zIndex: 1 }}>
+                        <div
+                            style={{
+                                marginTop: "-18%",
+                                marginLeft: "5%",
+                            }}
+                        >
+                            <img
+                                style={{ width: "98%" }}
+                                src={sashimiDish}
+                                alt="sashimi dish"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="row">
@@ -41,14 +91,22 @@ function App() {
                         <div>
                             <div>Cooking Time</div>
                             <div className="row">
-                                <img src={timerIcon} alt="timer icon" />
+                                <img
+                                    style={{ width: "22px", height: "22px" }}
+                                    src={timerIcon}
+                                    alt="timer icon"
+                                />
                                 <div>1h 30m</div>
                             </div>
                         </div>
                         <div>
                             <div>Serving</div>
                             <div className="row">
-                                <img src={peopleIcon} alt="people icon" />
+                                <img
+                                    style={{ width: "22px", height: "22px" }}
+                                    src={peopleIcon}
+                                    alt="people icon"
+                                />
                                 <div>2 people</div>
                             </div>
                         </div>
