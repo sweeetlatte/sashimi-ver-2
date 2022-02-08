@@ -164,6 +164,74 @@
     color: #545454;
 }
 
+@media (min-width: 1024px) and (max-width:1365px){
+    .container {
+        padding: 0rem 2.5rem 0rem 3.1rem;
+    }
+
+    .group-icon {
+        padding-top: 21px;
+        height: 19.5px;
+    }
+
+    .group-brand {
+        padding-top: 17.8%;
+    }
+
+    .group-brand .brand-1 {
+        font-size: 4rem;
+        letter-spacing: -2px;
+        line-height: 0.85;
+    }
+
+    .group-brand .brand-2 {
+        font-size: 31px;
+        letter-spacing: -0.1px;
+        margin-top: -4px;
+    }
+
+    .group-brand .brand-2 span {
+        font-size: 9px;
+    }
+
+    .group-info {
+        padding-top: 6.3%;
+    }
+
+    .group-info-1 .title-1 {
+        font-size: 10px;
+    margin-bottom: 2.5px;
+    }
+
+    .group-info-1 .info-icon {
+        width: 13px;
+        padding-right: 2px;
+    }
+
+    .group-info-1 .info-text-1 {
+        font-size: 9px;
+    }
+
+    .group-info .title-2 {
+        font-size: 11px;
+    }
+
+    .group-info .info-text-2 {
+        line-height: 1.9;
+        font-size: 8.5px;
+    }
+
+    .group-info-3 .info-img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .info-img > div {
+        font-size: 9px;
+        padding-top: 8px;
+    }
+}
+
 @media (min-width: 1366px) and (max-width: 1728px) {
     .container {
         padding: 0rem 3.3rem 0rem 4.2rem;
@@ -244,7 +312,4 @@
         padding-top: 7px;
         letter-spacing: 0.05px;
     }
-}
-
-@media (max-width: 1024px) {
 }
