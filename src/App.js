@@ -18,8 +18,12 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="w13">
-                        <div style={{ paddingTop: "46px" }}>
-                            <img src={menuIcon} alt="menu icon" />
+                        <div style={{ paddingTop: "44.5px", height: "33.5px" }}>
+                            <img
+                                style={{ height: "100%" }}
+                                src={menuIcon}
+                                alt="menu icon"
+                            />
                         </div>
                     </div>
                     <div className="w16">
@@ -29,7 +33,7 @@ function App() {
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "flex-end",
-                                height: "60%",
+                                height: "58.5%",
                             }}
                         >
                             <div
@@ -38,7 +42,7 @@ function App() {
                                     color: "#545454",
                                     fontSize: " 8rem",
                                     letterSpacing: "-9px",
-                                    lineHeight: 0.85,
+                                    lineHeight: 0.8,
                                 }}
                             >
                                 Sashimi <br />
@@ -46,6 +50,7 @@ function App() {
                             </div>
                             <div
                                 style={{
+                                    marginTop: "-8px",
                                     fontFamily: "MrsSaintDelafield",
                                     fontSize: "60px",
                                 }}
@@ -87,7 +92,13 @@ function App() {
                             }}
                         >
                             <img
-                                style={{ width: "96%" }}
+                                style={{
+                                    width: "96%",
+                                    borderRadius: "50%",
+                                    /*first argument: bottom offset, second: right offset, third: blur, fourth: color*/
+                                    boxShadow:
+                                        "32px 21px 20px rgb(0 0 0 / 0.1)",
+                                }}
                                 src={sashimiDish}
                                 alt="sashimi dish"
                             />
@@ -103,31 +114,33 @@ function App() {
                                     style={{
                                         width: "22px",
                                         height: "22px",
-                                        paddingRight: "8px",
+                                        paddingRight: "5px",
                                     }}
                                     src={timerIcon}
                                     alt="timer icon"
                                 />
-                                <div>1h 30m</div>
+                                <div style={{ fontWeight: "bold" }}>1h 30m</div>
                             </div>
-                            <div style={{ paddingTop: "37%" }}>
+                            <div style={{ paddingTop: "38%" }}>
                                 <div className="title-left">Serving</div>
                                 <div className="row">
                                     <img
                                         style={{
                                             width: "22px",
                                             height: "22px",
-                                            paddingRight: "8px",
+                                            paddingRight: "5px",
                                         }}
                                         src={peopleIcon}
                                         alt="people icon"
                                     />
-                                    <div>2 people</div>
+                                    <div style={{ fontWeight: "bold" }}>
+                                        2 people
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w37">
+                    <div className="w36">
                         <div style={{}}>
                             <div
                                 style={{
@@ -161,7 +174,7 @@ function App() {
                         </div>
                     </div>
                     <div
-                        className="w49 row"
+                        className="w50 row"
                         style={{
                             justifyContent: "space-around",
                             alignItems: "center",

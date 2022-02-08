@@ -29,12 +29,8 @@
     width: 20%;
 }
 
-.w37 {
-    width: 37.5%;
-}
-
-.w49 {
-    width: 49%;
+.w36 {
+    width: 36.5%;
 }
 
 .w50 {
@@ -45,7 +41,8 @@
     font-weight: bold;
     font-size: 18px;
     color: #aab4b6;
-    margin-bottom: 14px;
+    margin-bottom: 11px;
+    letter-spacing: -1px;
 }
 
 .ingre-img {
@@ -58,10 +55,16 @@
 
 .ingre-img > img {
     width: 100%;
+    border-radius: 50%;
+    /*first argument: bottom offset, second: right offset, third: blur, fourth: color*/
+    box-shadow: 17px 10px 27px rgb(0 0 0 / 0.1);
 }
 
 .ingre-img > div {
     padding-top: 19px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #545454;
 }
 
 @media (min-width: 1366px) {
