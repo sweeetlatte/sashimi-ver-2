@@ -62,7 +62,7 @@ function App() {
                                     src={timerIcon}
                                     alt="timer icon"
                                 />
-                                <div style={{ fontWeight: "bold" }}>1h 30m</div>
+                                <div className="info-text-1" style={{ fontWeight: "bold" }}>1h 30m</div>
                             </div>
                             <div className="info-bottom">
                                 <div className="title-1">Serving</div>
@@ -72,7 +72,7 @@ function App() {
                                         src={peopleIcon}
                                         alt="people icon"
                                     />
-                                    <div style={{ fontWeight: "bold" }}>
+                                    <div className="info-text-1">
                                         2 people
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ function App() {
                     </div>
                     <div className="w36">
                         <div className="title-2">Ingredients</div>
-                        <ul className="info-text">
+                        <ul className="info-text-2">
                             <li>
                                 1 pound fresh, sashimi-quality fish, such as
                                 yellowfin tuna or salmon
