@@ -10,7 +10,7 @@ import octopus from "../../assets/images/octopus.png";
 
 export default function IngredientImage() {
     return (
-        <div className="row group-info-3">
+        <>
             <div className="info-img">
                 <img src={salmon} alt="salmon" />
                 <div>Salmon Fish</div>
@@ -31,6 +31,6 @@ export default function IngredientImage() {
                 <img src={octopus} alt="octopus" />
                 <div>Octopus</div>
             </div>
-        </div>
+        </>
     );
 }

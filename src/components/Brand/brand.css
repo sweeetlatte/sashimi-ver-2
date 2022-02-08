@@ -2,8 +2,6 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 18%;
 }
 
 .group-brand .brand-1 {
