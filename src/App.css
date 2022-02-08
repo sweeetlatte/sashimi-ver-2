@@ -164,7 +164,7 @@
     color: #545454;
 }
 
-@media (min-width: 1024px) and (max-width:1365px){
+@media (min-width: 1024px) and (max-width: 1365px) {
     .container {
         padding: 0rem 2.5rem 0rem 3.1rem;
     }
@@ -200,7 +200,7 @@
 
     .group-info-1 .title-1 {
         font-size: 10px;
-    margin-bottom: 2.5px;
+        margin-bottom: 2.5px;
     }
 
     .group-info-1 .info-icon {

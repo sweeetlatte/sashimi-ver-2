@@ -62,7 +62,12 @@ function App() {
                                     src={timerIcon}
                                     alt="timer icon"
                                 />
-                                <div className="info-text-1" style={{ fontWeight: "bold" }}>1h 30m</div>
+                                <div
+                                    className="info-text-1"
+                                    style={{ fontWeight: "bold" }}
+                                >
+                                    1h 30m
+                                </div>
                             </div>
                             <div className="info-bottom">
                                 <div className="title-1">Serving</div>
@@ -72,9 +77,7 @@ function App() {
                                         src={peopleIcon}
                                         alt="people icon"
                                     />
-                                    <div className="info-text-1">
-                                        2 people
-                                    </div>
+                                    <div className="info-text-1">2 people</div>
                                 </div>
                             </div>
                         </div>
