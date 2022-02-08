@@ -18,7 +18,7 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="w13">
-                        <div style={{ paddingTop: "51px" }}>
+                        <div style={{ paddingTop: "46px" }}>
                             <img src={menuIcon} alt="menu icon" />
                         </div>
                     </div>
@@ -29,7 +29,7 @@ function App() {
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "flex-end",
-                                height: "64%",
+                                height: "60%",
                             }}
                         >
                             <div
@@ -37,7 +37,7 @@ function App() {
                                     fontFamily: "Wilma",
                                     color: "#545454",
                                     fontSize: " 8rem",
-                                    letterSpacing: "-5px",
+                                    letterSpacing: "-9px",
                                     lineHeight: 0.85,
                                 }}
                             >
@@ -70,8 +70,8 @@ function App() {
                         >
                             <img
                                 style={{
-                                    marginTop: "-14%",
-                                    marginLeft: "14%",
+                                    marginTop: "-17%",
+                                    marginLeft: "16%",
                                 }}
                                 src={ink}
                                 alt="ink"
@@ -83,11 +83,11 @@ function App() {
                         <div
                             style={{
                                 marginTop: "-18%",
-                                marginLeft: "5%",
+                                marginLeft: "4%",
                             }}
                         >
                             <img
-                                style={{ width: "97%" }}
+                                style={{ width: "96%" }}
                                 src={sashimiDish}
                                 alt="sashimi dish"
                             />
@@ -100,19 +100,24 @@ function App() {
                             <div className="title-left">Cooking Time</div>
                             <div className="row">
                                 <img
-                                    style={{ width: "22px", height: "22px" }}
+                                    style={{
+                                        width: "22px",
+                                        height: "22px",
+                                        paddingRight: "8px",
+                                    }}
                                     src={timerIcon}
                                     alt="timer icon"
                                 />
                                 <div>1h 30m</div>
                             </div>
-                            <div style={{ paddingTop: "42%" }}>
+                            <div style={{ paddingTop: "37%" }}>
                                 <div className="title-left">Serving</div>
                                 <div className="row">
                                     <img
                                         style={{
                                             width: "22px",
                                             height: "22px",
+                                            paddingRight: "8px",
                                         }}
                                         src={peopleIcon}
                                         alt="people icon"
@@ -122,10 +127,25 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="w36">
+                    <div className="w37">
                         <div style={{}}>
-                            <div>Ingredients</div>
-                            <ul>
+                            <div
+                                style={{
+                                    fontSize: "22px",
+                                    fontWeight: "bold",
+                                    letterSpacing: "-0.5px",
+                                }}
+                            >
+                                Ingredients
+                            </div>
+                            <ul
+                                style={{
+                                    listStyleType: "none",
+                                    padding: "8px 0px 0px 0px",
+                                    lineHeight: 1.97,
+                                    fontSize: "15px",
+                                }}
+                            >
                                 <li>
                                     1 pound fresh, sashimi-quality fish, such as
                                     yellowfin tuna or salmon
@@ -140,24 +160,30 @@ function App() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w50 row">
-                        <div>
+                    <div
+                        className="w49 row"
+                        style={{
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                        }}
+                    >
+                        <div className="ingre-img">
                             <img src={salmon} alt="salmon" />
-                            <div>Salmon</div>
+                            <div>Salmon Fish</div>
                         </div>
-                        <div>
+                        <div className="ingre-img">
                             <img src={caviar} alt="caviar" />
                             <div>Caviar</div>
                         </div>
-                        <div>
+                        <div className="ingre-img">
                             <img src={shrimp} alt="shrimp" />
                             <div>Shrimp</div>
                         </div>
-                        <div>
+                        <div className="ingre-img">
                             <img src={clam} alt="clam" />
-                            <div>Clam</div>
+                            <div>Red Clam</div>
                         </div>
-                        <div>
+                        <div className="ingre-img">
                             <img src={octopus} alt="octopus" />
                             <div>Octopus</div>
                         </div>
