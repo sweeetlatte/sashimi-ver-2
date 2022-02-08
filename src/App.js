@@ -18,118 +18,57 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="w13">
-                        <div style={{ paddingTop: "44.5px", height: "33.5px" }}>
+                        <div className="group-icon">
                             <img
-                                style={{ height: "100%" }}
+                                className="icon"
                                 src={menuIcon}
                                 alt="menu icon"
                             />
                         </div>
                     </div>
                     <div className="w16">
-                        <div
-                            style={{
-                                position: "absolute",
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "flex-end",
-                                height: "58.5%",
-                            }}
-                        >
-                            <div
-                                style={{
-                                    fontFamily: "Wilma",
-                                    color: "#545454",
-                                    fontSize: " 8rem",
-                                    letterSpacing: "-9px",
-                                    lineHeight: 0.8,
-                                }}
-                            >
+                        <div className="group-brand">
+                            <div className="brand-1">
                                 Sashimi <br />
                                 Recipe
                             </div>
-                            <div
-                                style={{
-                                    marginTop: "-8px",
-                                    fontFamily: "MrsSaintDelafield",
-                                    fontSize: "60px",
-                                }}
-                            >
-                                Signature{" "}
-                                <span
-                                    style={{
-                                        fontFamily: "sans-serif",
-                                        fontSize: "18px",
-                                    }}
-                                >
-                                    FOOD
-                                </span>
+                            <div className="brand-2">
+                                Signature <span>FOOD</span>
                             </div>
                         </div>
                     </div>
                     <div className="w20">
-                        <div
-                            style={{
-                                zIndex: 0,
-                            }}
-                        >
-                            <img
-                                style={{
-                                    marginTop: "-17%",
-                                    marginLeft: "16%",
-                                }}
-                                src={ink}
-                                alt="ink"
-                            />
+                        <div className="group-ink">
+                            <img className="ink" src={ink} alt="ink" />
                         </div>
                     </div>
-
                     <div className="w50" style={{ zIndex: 1 }}>
-                        <div
-                            style={{
-                                marginTop: "-18%",
-                                marginLeft: "4%",
-                            }}
-                        >
+                        <div className="group-sashimi-dish">
                             <img
-                                style={{
-                                    width: "96%",
-                                    borderRadius: "50%",
-                                    /*first argument: bottom offset, second: right offset, third: blur, fourth: color*/
-                                    boxShadow:
-                                        "32px 21px 20px rgb(0 0 0 / 0.1)",
-                                }}
+                                className="sashimi-dish"
                                 src={sashimiDish}
                                 alt="sashimi dish"
                             />
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{ paddingTop: "7%" }}>
+                <div className="row group-info">
                     <div className="w13">
-                        <div style={{ paddingLeft: "4%" }}>
-                            <div className="title-left">Cooking Time</div>
+                        <div className="group-info-1">
+                            <div className="title-1">Cooking Time</div>
                             <div className="row">
                                 <img
-                                    style={{
-                                        width: "22px",
-                                        height: "22px",
-                                        paddingRight: "5px",
-                                    }}
+                                    className="info-icon"
                                     src={timerIcon}
                                     alt="timer icon"
                                 />
                                 <div style={{ fontWeight: "bold" }}>1h 30m</div>
                             </div>
-                            <div style={{ paddingTop: "38%" }}>
-                                <div className="title-left">Serving</div>
+                            <div className="info-bottom">
+                                <div className="title-1">Serving</div>
                                 <div className="row">
                                     <img
-                                        style={{
-                                            width: "22px",
-                                            height: "22px",
-                                            paddingRight: "5px",
-                                        }}
+                                        className="info-icon"
                                         src={peopleIcon}
                                         alt="people icon"
                                     />
@@ -141,62 +80,39 @@ function App() {
                         </div>
                     </div>
                     <div className="w36">
-                        <div style={{}}>
-                            <div
-                                style={{
-                                    fontSize: "22px",
-                                    fontWeight: "bold",
-                                    letterSpacing: "-0.5px",
-                                }}
-                            >
-                                Ingredients
-                            </div>
-                            <ul
-                                style={{
-                                    listStyleType: "none",
-                                    padding: "8px 0px 0px 0px",
-                                    lineHeight: 1.97,
-                                    fontSize: "15px",
-                                }}
-                            >
-                                <li>
-                                    1 pound fresh, sashimi-quality fish, such as
-                                    yellowfin tuna or salmon
-                                </li>
-                                <li>2 teaspoons extra-virgin olive oil</li>
-                                <li>
-                                    4 teaspoons shiro dashi or regular Japanese
-                                    soy sauce
-                                </li>
-                                <li>2 teaspoons white sesame seeds</li>
-                                <li>1/2 teaspoon thinly sliced chives</li>
-                            </ul>
-                        </div>
+                        <div className="title-2">Ingredients</div>
+                        <ul className="info-text">
+                            <li>
+                                1 pound fresh, sashimi-quality fish, such as
+                                yellowfin tuna or salmon
+                            </li>
+                            <li>2 teaspoons extra-virgin olive oil</li>
+                            <li>
+                                4 teaspoons shiro dashi or regular Japanese soy
+                                sauce
+                            </li>
+                            <li>2 teaspoons white sesame seeds</li>
+                            <li>1/2 teaspoon thinly sliced chives</li>
+                        </ul>
                     </div>
-                    <div
-                        className="w50 row"
-                        style={{
-                            justifyContent: "space-around",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div className="ingre-img">
+                    <div className="w50 row group-info-3">
+                        <div className="info-img">
                             <img src={salmon} alt="salmon" />
                             <div>Salmon Fish</div>
                         </div>
-                        <div className="ingre-img">
+                        <div className="info-img">
                             <img src={caviar} alt="caviar" />
                             <div>Caviar</div>
                         </div>
-                        <div className="ingre-img">
+                        <div className="info-img">
                             <img src={shrimp} alt="shrimp" />
                             <div>Shrimp</div>
                         </div>
-                        <div className="ingre-img">
+                        <div className="info-img">
                             <img src={clam} alt="clam" />
                             <div>Red Clam</div>
                         </div>
-                        <div className="ingre-img">
+                        <div className="info-img">
                             <img src={octopus} alt="octopus" />
                             <div>Octopus</div>
                         </div>
