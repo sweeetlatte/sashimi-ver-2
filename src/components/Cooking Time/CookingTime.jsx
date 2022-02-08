@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./cookingTime.css";
+
 import timerIcon from "../../assets/icons/timer.svg";
 import peopleIcon from "../../assets/icons/user.svg";
 

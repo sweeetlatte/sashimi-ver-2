@@ -1,0 +1,57 @@
+.group-info-1 {
+    padding-left: 4%;
+}
+
+.group-info-1 .title-1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #aab4b6;
+    margin-bottom: 11px;
+    letter-spacing: -1px;
+}
+
+.group-info-1 .info-icon {
+    width: 22px;
+    padding-right: 5px;
+}
+
+.group-info-1 .info-text-1 {
+    font-weight: bold;
+}
+
+.group-info-1 .info-bottom {
+    padding-top: 38%;
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .group-info-1 .title-1 {
+        font-size: 10px;
+        margin-bottom: 2.5px;
+    }
+
+    .group-info-1 .info-icon {
+        width: 13px;
+        padding-right: 2px;
+    }
+
+    .group-info-1 .info-text-1 {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .group-info-1 .title-1 {
+        font-size: 13px;
+        margin-bottom: 4.5px;
+        letter-spacing: -0.5px;
+    }
+
+    .group-info-1 .info-icon {
+        width: 16px;
+        padding-right: 4px;
+    }
+
+    .group-info-1 .info-text-1 {
+        font-size: 13px;
+    }
+}

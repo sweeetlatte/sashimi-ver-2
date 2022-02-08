@@ -1,0 +1,22 @@
+.group-icon {
+    padding-top: 44.5px;
+    height: 33.5px;
+}
+
+.group-icon .icon {
+    height: 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .group-icon {
+        padding-top: 21px;
+        height: 19.5px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .group-icon {
+        padding-top: 28px;
+        height: 29.5px;
+    }
+}

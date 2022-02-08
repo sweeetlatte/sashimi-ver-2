@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ingredientText.css";
+
 export default function IngredientText() {
     return (
         <>

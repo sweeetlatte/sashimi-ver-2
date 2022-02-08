@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./sashimiDish.css";
+
 import sashimiDish from "../../assets/images/sashimi-dish.png";
 
 export default function SashimiDish() {

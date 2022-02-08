@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./iconMenu.css";
+
 import menuIcon from "../../assets/icons/menu.svg";
 
 export default function IconMenu() {

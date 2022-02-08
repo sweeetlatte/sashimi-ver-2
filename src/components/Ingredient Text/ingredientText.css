@@ -1,0 +1,36 @@
+.group-info .title-2 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.group-info .info-text-2 {
+    list-style-type: none;
+    padding: 8px 0px 0px 0px;
+    line-height: 1.97;
+    font-size: 15px;
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .group-info .title-2 {
+        font-size: 11px;
+    }
+
+    .group-info .info-text-2 {
+        line-height: 1.9;
+        font-size: 8.5px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .group-info .title-2 {
+        font-size: 14px;
+        letter-spacing: 0.01px;
+    }
+
+    .group-info .info-text-2 {
+        line-height: 1.8;
+        font-size: 12px;
+        padding: 5px 0px 0px 0px;
+    }
+}

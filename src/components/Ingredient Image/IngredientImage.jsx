@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ingredientImage.css";
+
 import salmon from "../../assets/images/salmon.png";
 import caviar from "../../assets/images/caviar.png";
 import shrimp from "../../assets/images/shrimp.png";
