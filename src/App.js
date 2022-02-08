@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import "./animation.css";
-import IconMenu from "./components/Icon Menu/IconMenu";
+import IconMenu from "./components/IconMenu/IconMenu";
 import Brand from "./components/Brand/Brand";
 import Ink from "./components/Ink/Ink";
-import SashimiDish from "./components/Sashimi Dish/SashimiDish";
-import CookingTime from "./components/Cooking Time/CookingTime";
+import SashimiDish from "./components/SashimiDish/SashimiDish";
+import CookingTime from "./components/CookingTime/CookingTime";
 import IngredientText from "./components/Ingredient Text/IngredientText";
-import IngredientImage from "./components/Ingredient Image/IngredientImage";
+import IngredientImage from "./components/IngredientImage/IngredientImage";
 
 function App() {
     const [control, setControl] = useState(null);
