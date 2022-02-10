@@ -1,3 +1,4 @@
+/* fade-out-left */
 @keyframes fadeOutLeft {
     0% {
         opacity: 1;
@@ -23,6 +24,7 @@
     animation-fill-mode: both;
 }
 
+/* in-left */
 @keyframes inLeft {
     0% {
         opacity: 0;
@@ -45,4 +47,116 @@
     animation-duration: 858ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+/* up-left */
+@keyframes upLeft {
+    0% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 3%;
+        top: -48%;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes upLeft1024 {
+    0% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0.7%;
+        top: -34%;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes upLeft1366 {
+    0% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0.8%;
+        top: -45%;
+        transform: rotate(180deg);
+    }
+}
+
+.up-left {
+    animation: upLeft 1917ms;
+    animation-fill-mode: both;
+}
+
+/* down-right */
+@keyframes downRight {
+    0% {
+        left: 3%;
+        top: -48%;
+        transform: rotate(180deg);
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes downRight1024 {
+    0% {
+        left: 0.7%;
+        top: -34%;
+        transform: rotate(180deg);
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes downRight1366 {
+    0% {
+        left: 0.8%;
+        top: -45%;
+        transform: rotate(180deg);
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+}
+
+.down-right {
+    animation: downRight 1917ms;
+    animation-fill-mode: both;
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .up-left {
+        animation: upLeft1024 1917ms;
+        animation-fill-mode: both;
+    }
+    .down-right {
+        animation: downRight1024 1917ms;
+        animation-fill-mode: both;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .up-left {
+        animation: upLeft1366 1917ms;
+        animation-fill-mode: both;
+    }
+    .down-right {
+        animation: downRight1366 1917ms;
+        animation-fill-mode: both;
+    }
 }

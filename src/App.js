@@ -52,7 +52,7 @@ function App() {
                         <IconMenu />
                     </div>
                     <div
-                        style={{ paddingTop: "18%" }}
+                        style={{ paddingTop: "19.6%" }}
                         className={
                             control === "play"
                                 ? "w16 fade-out-left"
@@ -66,7 +66,20 @@ function App() {
                     <div className="w20">
                         <Ink />
                     </div>
-                    <div className="w50" style={{ zIndex: 1 }}>
+                    <div
+                        className={
+                            control === "play"
+                                ? "w50 up-left"
+                                : control === "reverse"
+                                ? "w50 down-right"
+                                : "w50"
+                        }
+                        style={{
+                            zIndex: 1,
+                            position: "absolute",
+                            left: "48.5%",
+                        }}
+                    >
                         <SashimiDish />
                     </div>
                 </div>

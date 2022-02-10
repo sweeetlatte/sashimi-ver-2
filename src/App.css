@@ -8,6 +8,18 @@
     src: url(./assets/fonts/MrsSaintDelafield-Regular.ttf);
 }
 
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .container {
+        padding: 0rem 2.5rem 0rem 3.1rem;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .container {
+        padding: 0rem 3.3rem 0rem 4.2rem;
+    }
+}
+
 .container {
     padding: 0rem 4.9rem 0rem 6rem;
 }
@@ -38,25 +50,5 @@
 }
 
 .group-info {
-    padding-top: 7%;
-}
-
-@media (min-width: 1024px) and (max-width: 1365px) {
-    .container {
-        padding: 0rem 2.5rem 0rem 3.1rem;
-    }
-
-    .group-info {
-        padding-top: 6.3%;
-    }
-}
-
-@media (min-width: 1366px) and (max-width: 1728px) {
-    .container {
-        padding: 0rem 3.3rem 0rem 4.2rem;
-    }
-
-    .group-info {
-        padding-top: 6.8%;
-    }
+    padding-top: 24.5%;
 }
