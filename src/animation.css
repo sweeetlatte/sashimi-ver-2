@@ -22,3 +22,27 @@
     animation: fadeOutLeft 858ms;
     animation-fill-mode: both;
 }
+
+@keyframes inLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40vw);
+    }
+    30% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.in-left {
+    animation-delay: 1417ms; /* after background's animation */
+    -webkit-animation-name: inLeft;
+    animation-name: inLeft;
+    -webkit-animation-duration: 858ms;
+    animation-duration: 858ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

@@ -54,7 +54,11 @@ function App() {
                     <div
                         style={{ paddingTop: "18%" }}
                         className={
-                            control === "play" ? "w16 fade-out-left" : "w16"
+                            control === "play"
+                                ? "w16 fade-out-left"
+                                : control === "reverse"
+                                ? "w16 in-left"
+                                : "w16"
                         }
                     >
                         <Brand />
@@ -69,14 +73,22 @@ function App() {
                 <div className="row group-info">
                     <div
                         className={
-                            control === "play" ? "w13 fade-out-left" : "w13"
+                            control === "play"
+                                ? "w13 fade-out-left"
+                                : control === "reverse"
+                                ? "w13 in-left"
+                                : "w13"
                         }
                     >
                         <CookingTime />
                     </div>
                     <div
                         className={
-                            control === "play" ? "w36 fade-out-left" : "w36"
+                            control === "play"
+                                ? "w36 fade-out-left"
+                                : control === "reverse"
+                                ? "w36 in-left"
+                                : "w36"
                         }
                     >
                         <IngredientText />
