@@ -1,6 +1,8 @@
 .group-info-3 {
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    right: 2%;
+    padding-top: 3.3%;
 }
 
 .group-info-3 .info-img {

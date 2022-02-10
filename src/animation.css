@@ -139,6 +139,28 @@
     animation-fill-mode: both;
 }
 
+/* Ingredient-Animation */
+@keyframes left {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(var(--ing-custom));
+    }
+}
+
+.left-1 {
+    --ing-custom: -911px, -497px;
+    animation: left 1917ms;
+    animation-fill-mode: both;
+}
+
+.left-2 {
+    --ing-custom: -800px, -100px;
+    animation: left 1917ms;
+    animation-fill-mode: both;
+}
+
 @media (min-width: 1024px) and (max-width: 1365px) {
     .up-left {
         animation: upLeft1024 1917ms;
@@ -147,6 +169,12 @@
     .down-right {
         animation: downRight1024 1917ms;
         animation-fill-mode: both;
+    }
+    .left-1 {
+        --ing-custom: -750px, -350px;
+    }
+    .left-2 {
+        --ing-custom: -780px, -300px;
     }
 }
 
@@ -158,5 +186,11 @@
     .down-right {
         animation: downRight1366 1917ms;
         animation-fill-mode: both;
+    }
+    .left-1 {
+        --ing-custom: -750px, -350px;
+    }
+    .left-2 {
+        --ing-custom: -780px, -300px;
     }
 }

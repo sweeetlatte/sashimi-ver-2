@@ -106,8 +106,8 @@ function App() {
                     >
                         <IngredientText />
                     </div>
-                    <div className="w50 row group-info-3">
-                        <IngredientImage />
+                    <div className="w50 row group-info-3" style={{position: "absolute"}} >
+                        <IngredientImage state={control} />
                     </div>
                 </div>
             </div>

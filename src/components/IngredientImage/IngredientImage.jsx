@@ -8,14 +8,32 @@ import shrimp from "../../assets/images/shrimp.png";
 import clam from "../../assets/images/clam.png";
 import octopus from "../../assets/images/octopus.png";
 
-export default function IngredientImage() {
+export default function IngredientImage({ state }) {
+    console.log(state);
+
     return (
         <>
-            <div className="info-img">
+            <div
+                className={
+                    state === "play"
+                        ? "info-img left-1"
+                        : state === "reverse"
+                        ? "info-img left-reverse"
+                        : "info-img"
+                }
+            >
                 <img src={salmon} alt="salmon" />
                 <div>Salmon Fish</div>
             </div>
-            <div className="info-img">
+            <div
+                className={
+                    state === "play"
+                        ? "info-img left-2"
+                        : state === "reverse"
+                        ? "info-img left-reverse"
+                        : "info-img"
+                }
+            >
                 <img src={caviar} alt="caviar" />
                 <div>Caviar</div>
             </div>
