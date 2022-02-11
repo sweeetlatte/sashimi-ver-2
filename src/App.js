@@ -7,8 +7,11 @@ import Brand from "./components/Brand/Brand";
 import Ink from "./components/Ink/Ink";
 import SashimiDish from "./components/SashimiDish/SashimiDish";
 import CookingTime from "./components/CookingTime/CookingTime";
-import IngredientText from "./components/Ingredient Text/IngredientText";
+import IngredientText from "./components/IngredientText/IngredientText";
 import IngredientImage from "./components/IngredientImage/IngredientImage";
+import Instruction from "./components/Instruction/Instruction";
+
+import cooking from "../src/assets/images/cooking.jpg";
 
 function App() {
     const [control, setControl] = useState(null);
@@ -33,9 +36,10 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" style={{width: "100vw", display: "flex", overflow: "hidden"}}>
             <div
                 className="container"
+                style={{width: "100vw"}}
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
@@ -106,9 +110,38 @@ function App() {
                     >
                         <IngredientText />
                     </div>
-                    <div className="w50 row group-info-3" style={{position: "absolute"}} >
+                    <div
+                        className="w50 row group-info-3"
+                        style={{ position: "absolute", zIndex: 1 }}
+                    >
                         <IngredientImage state={control} />
                     </div>
+                </div>
+            </div>
+            <div
+                className={control==="play" ? "row slide-left" : "row"}
+                style={{
+                    backgroundColor: "#303238",
+                    justifyContent: "flex-end",
+                    position: "absolute",
+                    width: "100vw",
+                    height: "100%",
+                // display: "none",
+                right: "-100vw"
+                }}
+            >
+                <div className="w25">
+                    <Instruction />
+                </div>
+                <div
+                    className="w51"
+                    style={{ height: "100vh", overflow: "hidden" }}
+                >
+                    <img
+                        style={{ width: "100%" }}
+                        src={cooking}
+                        alt="cooking"
+                    />
                 </div>
             </div>
         </div>

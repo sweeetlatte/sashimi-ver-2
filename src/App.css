@@ -29,12 +29,20 @@
     width: 20%;
 }
 
+.w25 {
+    width: 25%;
+}
+
 .w36 {
     width: 36.5%;
 }
 
 .w50 {
     width: 50%;
+}
+
+.w51 {
+    width: 51%;
 }
 
 .group-info {

@@ -1,0 +1,37 @@
+@media (min-width: 1366px) and (max-width: 1728px) {
+    .group-instruction {
+        padding-right: 23%;
+    }
+
+    .group-instruction .instruction-title {
+        font-size: 14px;
+    }
+
+    .group-instruction .instruction-content {
+        line-height: 2.4;
+        font-size: 9px;
+        letter-spacing: 0.9px;
+        padding-top: 26px;
+    }
+}
+
+.group-instruction {
+    padding-right: 20%;
+    color: white;
+    margin-top: 81%;
+    height: 54.8vh;
+    overflow: scroll;
+}
+
+.group-instruction .instruction-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.group-instruction .instruction-content {
+    line-height: 2.1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 42px;
+    font-weight: lighter;
+}
