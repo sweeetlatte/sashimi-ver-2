@@ -114,7 +114,7 @@ function App() {
                         <IngredientText />
                     </div>
                     <div
-                        className="w50 row group-info-3"
+                        className={control==="play"?"w50 row group-info-3 group-info-3_animate":"w50 row group-info-3"}
                         style={{ position: "absolute", zIndex: 1 }}
                     >
                         <IngredientImage state={control} />

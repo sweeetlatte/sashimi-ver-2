@@ -54,6 +54,7 @@
     position: absolute;
 }
 
+
 @media (min-width: 1024px) and (max-width: 1365px) {
     .container {
         padding: 0rem 2.5rem 0rem 3.1rem;

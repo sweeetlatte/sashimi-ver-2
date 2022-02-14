@@ -56,7 +56,14 @@ export default function IngredientImage({ state }) {
                     }
                 >
                     <img src={ingredient.image} alt={ingredient.alt} />
-                    <div>{ingredient.name}</div>
+                    <div
+                        style={{
+                            color: state === "play" ? "white" : "#545454",
+                            transition: "color 1600ms ease",
+                        }}
+                    >
+                        {ingredient.name}
+                    </div>
                 </div>
             ))}
         </>

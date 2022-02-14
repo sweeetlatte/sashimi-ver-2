@@ -27,6 +27,12 @@
     color: #545454;
 }
 
+/* .group-info-3_animate {
+    color: white;
+    transition: color 1600ms ease;
+    /* margin-bottom: 54px;
+} */
+
 @media (min-width: 1024px) and (max-width: 1365px) {
     .group-info-3 .info-img {
         width: 52px;
