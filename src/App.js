@@ -148,34 +148,50 @@ function App() {
                     // 610 / 1340
                 }}
             >
+                <div style={{ position: "absolute", zIndex: 5 }}>
+                    <div
+                        className={
+                            control === "play"
+                                ? "w25 slide-left"
+                                : control === "reverse"
+                                ? "w25 slide-right"
+                                : "w25"
+                        }
+                    >
+                        <Instruction />
+                    </div>
+                </div>
                 <div
                     className={
                         control === "play"
-                            ? "row slide-left"
+                            ? "slide-left"
                             : control === "reverse"
-                            ? "row slide-right"
-                            : "row"
+                            ? "slide-right"
+                            : ""
                     }
                     style={{
+                        width: "100vw",
+                        height: "100%",
                         backgroundColor: "#303238",
                         justifyContent: "flex-end",
                         position: "absolute",
-                        width: "100vw",
                     }}
+                ></div>
+                <div
+                    className={
+                        control === "play"
+                            ? "w51 slide-left"
+                            : control === "reverse"
+                            ? "w51 slide-right"
+                            : "w51"
+                    }
+                    style={{ height: "100vh", overflow: "hidden" }}
                 >
-                    <div className="w25">
-                        <Instruction />
-                    </div>
-                    <div
-                        className="w51"
-                        style={{ height: "100vh", overflow: "hidden" }}
-                    >
-                        <img
-                            style={{ width: "100%" }}
-                            src={cooking}
-                            alt="cooking"
-                        />
-                    </div>
+                    <img
+                        style={{ width: "100%" }}
+                        src={cooking}
+                        alt="cooking"
+                    />
                 </div>
             </div>
         </div>
