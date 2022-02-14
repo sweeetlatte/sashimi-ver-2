@@ -36,10 +36,13 @@ function App() {
     }
 
     return (
-        <div className="App" style={{width: "100vw", display: "flex", overflow: "hidden"}}>
+        <div
+            className="App"
+            style={{ width: "100vw", display: "flex", overflow: "hidden",}}
+        >
             <div
                 className="container"
-                style={{width: "100vw"}}
+                style={{ width: "100vw", }}
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
@@ -56,7 +59,7 @@ function App() {
                         <IconMenu />
                     </div>
                     <div
-                        style={{ paddingTop: "19.6%" }}
+                        style={{ paddingTop: "39.6%", paddingLeft: "12%" }}
                         className={
                             control === "play"
                                 ? "w16 fade-out-left"
@@ -102,10 +105,10 @@ function App() {
                     <div
                         className={
                             control === "play"
-                                ? "w36 fade-out-left"
+                                ? "w36 group-info-2 fade-out-left"
                                 : control === "reverse"
-                                ? "w36 in-left"
-                                : "w36"
+                                ? "w36 group-info-2 in-left"
+                                : "w36 group-info-2"
                         }
                     >
                         <IngredientText />
@@ -119,29 +122,35 @@ function App() {
                 </div>
             </div>
             <div
-                className={control==="play" ? "row slide-left" : "row"}
                 style={{
-                    backgroundColor: "#303238",
-                    justifyContent: "flex-end",
-                    position: "absolute",
+                    position: "relative",
+                    height: "100vh",
                     width: "100vw",
-                    height: "100%",
-                // display: "none",
-                right: "-100vw"
+                    right: "-100vw"
                 }}
             >
-                <div className="w25">
-                    <Instruction />
-                </div>
                 <div
-                    className="w51"
-                    style={{ height: "100vh", overflow: "hidden" }}
+                    className={control === "play" ? "row slide-left" : "row"}
+                    style={{
+                        backgroundColor: "#303238",
+                        justifyContent: "flex-end",
+                        position: "absolute",
+                        width: "100vw",
+                    }}
                 >
-                    <img
-                        style={{ width: "100%" }}
-                        src={cooking}
-                        alt="cooking"
-                    />
+                    <div className="w25">
+                        <Instruction />
+                    </div>
+                    <div
+                        className="w51"
+                        style={{ height: "100vh", overflow: "hidden" }}
+                    >
+                        <img
+                            style={{ width: "100%" }}
+                            src={cooking}
+                            alt="cooking"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
