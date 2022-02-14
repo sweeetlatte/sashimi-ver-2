@@ -57,39 +57,15 @@
         transform: rotate(0deg);
     }
     100% {
-        left: 1%;
-        top: -45%;
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes upLeft1024 {
-    0% {
-        right: 0%;
-        top: 0%;
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 0.7%;
-        top: -34%;
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes upLeft1366 {
-    0% {
-        right: 0%;
-        top: 0%;
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 0.8%;
-        top: -45%;
+        left: var(--left);
+        top: var(--top);
         transform: rotate(180deg);
     }
 }
 
 .up-left {
+    --left: 1%;
+    --top: -45%;
     animation: upLeft 1917ms;
     animation-fill-mode: both;
 }
@@ -195,16 +171,19 @@
 
 @media (min-width: 1024px) and (max-width: 1365px) {
     .up-left {
-        animation: upLeft1024 1917ms;
-        animation-fill-mode: both;
+        --left: 0.7%;
+        --top: -34%;
     }
+
     .down-right {
         animation: downRight1024 1917ms;
         animation-fill-mode: both;
     }
+
     .left-1 {
         --ing-custom: -750px, -350px;
     }
+
     .left-2 {
         --ing-custom: -780px, -300px;
     }
@@ -212,16 +191,18 @@
 
 @media (min-width: 1366px) and (max-width: 1728px) {
     .up-left {
-        animation: upLeft1366 1917ms;
-        animation-fill-mode: both;
+        --left: 0.8%;
     }
+
     .down-right {
         animation: downRight1366 1917ms;
         animation-fill-mode: both;
     }
+
     .left-1 {
         --ing-custom: -750px, -350px;
     }
+
     .left-2 {
         --ing-custom: -780px, -300px;
     }

@@ -38,11 +38,11 @@ function App() {
     return (
         <div
             className="App"
-            style={{ width: "100vw", display: "flex", overflow: "hidden",}}
+            style={{ width: "100vw", display: "flex", overflow: "hidden" }}
         >
             <div
                 className="container"
-                style={{ width: "100vw", }}
+                style={{ width: "100vw" }}
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
@@ -126,7 +126,7 @@ function App() {
                     position: "relative",
                     height: "100vh",
                     width: "100vw",
-                    right: "-100vw"
+                    right: "-100vw",
                 }}
             >
                 <div
