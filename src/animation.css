@@ -115,7 +115,7 @@
     animation-fill-mode: both;
 }
 
-/* Ingredient-Animation */
+/* Ingredient Animation */
 @keyframes left {
     0% {
         transform: rotate(0deg);
@@ -130,13 +130,30 @@
     animation-fill-mode: both;
 }
 
+@keyframes direction {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes directionContainer {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-64.5vw, 1vw);
+    }
+}
+
+/* Grey Background Animation */
 @keyframes slideLeft {
     0% {
-        /* left: 0%; */
         transform: translateX(0vw);
     }
     100% {
-        /* left: -100vw; */
         transform: translateX(-100vw);
     }
 }
@@ -146,7 +163,7 @@
     animation-fill-mode: both;
 }
 
-/* ingredientImage rotate */
+/* IngredientImage rotate */
 @keyframes rotate {
     0% {
         transform: translateX(0px) translateY(0px);
@@ -187,6 +204,7 @@
     animation-fill-mode: both;
 }
 
+/* Media Query */
 @media (min-width: 1024px) and (max-width: 1365px) {
     .up-left {
         --left: 0.7%;

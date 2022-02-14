@@ -23,17 +23,20 @@ function App() {
         duration: 0,
     });
     const [background, setBackground] = useState(null);
-    const [hide, setHide] = useState("");
+    const [justifyContent, setJustifyContent] = useState("");
 
     function updateClassHide() {
         if (control === "play") {
             setTimeout(function () {
-                setHide("ingredients-left-hide");
-            }, 858);
-        } else {
-            setHide("");
+                setJustifyContent("justify-content_update");
+            }, 50);
         }
+        // else {
+        //     setJustifyContent("");
+        // }
     }
+
+    useEffect(() => updateClassHide(), [control]);
 
     return (
         <div
@@ -116,12 +119,24 @@ function App() {
                     <div
                         className={
                             control === "play"
-                                ? "w50 row group-info-3 group-info-3_animate"
-                                : "w50 row group-info-3"
+                                ? "w50 w50-container_animate"
+                                : "w50"
                         }
-                        style={{ position: "absolute", zIndex: 1 }}
+                        style={{
+                            position: "absolute",
+                            zIndex: 1,
+                            paddingLeft: "43%",
+                        }}
                     >
-                        <IngredientImage state={control} />
+                        <div
+                            className={
+                                control === "play"
+                                    ? `row group-info-3 group-info-3_animate ${justifyContent}`
+                                    : "row group-info-3"
+                            }
+                        >
+                            <IngredientImage state={control} />
+                        </div>
                     </div>
                 </div>
             </div>

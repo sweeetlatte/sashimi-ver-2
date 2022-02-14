@@ -65,7 +65,13 @@ export default function IngredientImage({ state }) {
                             color: state === "play" ? "white" : "#545454",
                             transition: "color 1600ms ease",
                         }}
-                        className={state === "play" ? "rotate" : "rotate-back"}
+                        className={
+                            state === "play"
+                                ? "rotate"
+                                : state === "reverse"
+                                ? "rotate-back"
+                                : ""
+                        }
                     >
                         {ingredient.name}
                     </div>

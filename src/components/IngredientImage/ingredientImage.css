@@ -32,13 +32,14 @@
     animation-fill-mode: both;
 }
 
-@keyframes direction {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(90deg) translate(-11vw, 63vw);
-    }
+.justify-content_update {
+    justify-content: start;
+    gap: 3.8%;
+}
+
+.w50-container_animate {
+    animation: directionContainer 1917ms;
+    animation-fill-mode: both;
 }
 
 @media (min-width: 1024px) and (max-width: 1365px) {
