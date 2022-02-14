@@ -54,6 +54,10 @@ export default function IngredientImage({ state }) {
                             ? "info-img left-reverse"
                             : "info-img"
                     }
+                    style={{
+                        alignItems: state === "play" ? "flex-start" : "center",
+                        transition: "alignItems 1600ms ease",
+                    }}
                 >
                     <img src={ingredient.image} alt={ingredient.alt} />
                     <div
@@ -61,6 +65,7 @@ export default function IngredientImage({ state }) {
                             color: state === "play" ? "white" : "#545454",
                             transition: "color 1600ms ease",
                         }}
+                        className={state === "play" ? "rotate" : "rotate-back"}
                     >
                         {ingredient.name}
                     </div>

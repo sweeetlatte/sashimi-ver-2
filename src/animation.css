@@ -146,6 +146,47 @@
     animation-fill-mode: both;
 }
 
+/* ingredientImage rotate */
+@keyframes rotate {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(50px) translateY(-22px);
+    }
+    50% {
+        transform: translateX(70px) translateY(-45px);
+    }
+    100% {
+        transform: translateX(120px) translateY(-80px);
+    }
+}
+
+@keyframes rotateBack {
+    0% {
+        transform: translateX(120px) translateY(-80px);
+    }
+    25% {
+        transform: translateX(70px) translateY(-45px);
+    }
+    50% {
+        transform: translateX(50px) translateY(-22px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+.rotate {
+    animation: rotate 1400ms ease-in;
+    animation-fill-mode: both;
+}
+
+.rotate-back {
+    animation: rotateBack 1400ms ease-in;
+    animation-fill-mode: both;
+}
+
 @media (min-width: 1024px) and (max-width: 1365px) {
     .up-left {
         --left: 0.7%;

@@ -28,10 +28,6 @@
 }
 
 .group-info-3_animate {
-    /* color: white; */
-    /* transition: color 1600ms ease; */
-    /* margin-bottom: 54px; */
-
     animation: direction 1917ms;
     animation-fill-mode: both;
 }
