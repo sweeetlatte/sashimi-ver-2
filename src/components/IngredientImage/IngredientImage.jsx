@@ -49,7 +49,7 @@ export default function IngredientImage({ state }) {
                 <div
                     className={
                         state === "play"
-                            ? `info-img left-${index}`
+                            ? "info-img left"
                             : state === "reverse"
                             ? "info-img left-reverse"
                             : "info-img"

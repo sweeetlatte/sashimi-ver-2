@@ -27,11 +27,23 @@
     color: #545454;
 }
 
-/* .group-info-3_animate {
-    color: white;
-    transition: color 1600ms ease;
-    /* margin-bottom: 54px;
-} */
+.group-info-3_animate {
+    /* color: white; */
+    /* transition: color 1600ms ease; */
+    /* margin-bottom: 54px; */
+
+    animation: direction 1917ms;
+    animation-fill-mode: both;
+}
+
+@keyframes direction {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg) translate(-11vw, 63vw);
+    }
+}
 
 @media (min-width: 1024px) and (max-width: 1365px) {
     .group-info-3 .info-img {

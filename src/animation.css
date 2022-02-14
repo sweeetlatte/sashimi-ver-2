@@ -118,49 +118,26 @@
 /* Ingredient-Animation */
 @keyframes left {
     0% {
-        transform: translate(0, 0);
+        transform: rotate(0deg);
     }
     100% {
-        transform: translate(var(--ing-custom));
+        transform: rotate(-90deg);
     }
 }
 
-.left-0 {
-    --ing-custom: -899px, -453px;
-    animation: left 1917ms;
-    animation-fill-mode: both;
-}
-
-.left-1 {
-    --ing-custom: -1075px, -326px;
-    animation: left 1917ms;
-    animation-fill-mode: both;
-}
-
-.left-2 {
-    --ing-custom: -1251px, -188px;
-    animation: left 1917ms;
-    animation-fill-mode: both;
-}
-
-.left-3 {
-    --ing-custom: -1428px, -59px;
-    animation: left 1917ms;
-    animation-fill-mode: both;
-}
-
-.left-4 {
-    --ing-custom: -1603px, 77px;
+.left {
     animation: left 1917ms;
     animation-fill-mode: both;
 }
 
 @keyframes slideLeft {
     0% {
+        /* left: 0%; */
         transform: translateX(0vw);
     }
     100% {
-        transform: translateX(-153.9vw);
+        /* left: -100vw; */
+        transform: translateX(-100vw);
     }
 }
 
@@ -179,14 +156,6 @@
         animation: downRight1024 1917ms;
         animation-fill-mode: both;
     }
-
-    .left-1 {
-        --ing-custom: -750px, -350px;
-    }
-
-    .left-2 {
-        --ing-custom: -780px, -300px;
-    }
 }
 
 @media (min-width: 1366px) and (max-width: 1728px) {
@@ -197,13 +166,5 @@
     .down-right {
         animation: downRight1366 1917ms;
         animation-fill-mode: both;
-    }
-
-    .left-1 {
-        --ing-custom: -750px, -350px;
-    }
-
-    .left-2 {
-        --ing-custom: -780px, -300px;
     }
 }

@@ -114,7 +114,11 @@ function App() {
                         <IngredientText />
                     </div>
                     <div
-                        className={control==="play"?"w50 row group-info-3 group-info-3_animate":"w50 row group-info-3"}
+                        className={
+                            control === "play"
+                                ? "w50 row group-info-3 group-info-3_animate"
+                                : "w50 row group-info-3"
+                        }
                         style={{ position: "absolute", zIndex: 1 }}
                     >
                         <IngredientImage state={control} />
@@ -126,7 +130,8 @@ function App() {
                     position: "relative",
                     height: "100vh",
                     width: "100vw",
-                    right: "-100vw",
+                    right: "-45.5vw",
+                    // 610 / 1340
                 }}
             >
                 <div

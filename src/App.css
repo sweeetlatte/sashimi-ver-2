@@ -54,11 +54,11 @@
     position: absolute;
 }
 
-
 @media (min-width: 1024px) and (max-width: 1365px) {
     .container {
         padding: 0rem 2.5rem 0rem 3.1rem;
     }
+
     .group-info {
         padding-top: 20%;
     }
@@ -68,6 +68,7 @@
     .container {
         padding: 0rem 3.3rem 0rem 4.2rem;
     }
+    
     .group-info {
         padding-top: 34%;
     }
