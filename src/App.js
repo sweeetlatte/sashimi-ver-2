@@ -15,14 +15,7 @@ import cooking from "../src/assets/images/cooking.jpg";
 
 function App() {
     const [control, setControl] = useState(null);
-    const [meta, setMeta] = useState({
-        //meta state of the player
-        control: control,
-        progress: 0,
-        currentTime: 0,
-        duration: 0,
-    });
-    const [background, setBackground] = useState(null);
+    // const [background, setBackground] = useState(null);
     const [justifyContent, setJustifyContent] = useState("");
 
     function updateClassHide() {
@@ -31,11 +24,15 @@ function App() {
                 setJustifyContent("justify-content_update");
             }, 50);
         }
-        // else {
-        //     setJustifyContent("");
-        // }
+        else if (control === "reverse") {
+            setTimeout(function () {
+                setJustifyContent("");
+            }, 200);
+            
+        }
     }
 
+    console.log("12 ", justifyContent);
     useEffect(() => updateClassHide(), [control]);
 
     return (
@@ -49,11 +46,11 @@ function App() {
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
-                        setBackground("grey");
+                        // setBackground("grey");
                         updateClassHide();
                     } else {
                         setControl("reverse");
-                        setBackground("white");
+                        // setBackground("white");
                     }
                 }}
             >
@@ -120,6 +117,8 @@ function App() {
                         className={
                             control === "play"
                                 ? "w50 w50-container_animate"
+                                : control === "reverse"
+                                ? "w50 w50-container_animate-back"
                                 : "w50"
                         }
                         style={{
@@ -132,6 +131,8 @@ function App() {
                             className={
                                 control === "play"
                                     ? `row group-info-3 group-info-3_animate ${justifyContent}`
+                                    : control === "reverse"
+                                    ? "row group-info-3 group-info-3_animate-back"
                                     : "row group-info-3"
                             }
                         >

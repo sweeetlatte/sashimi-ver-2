@@ -32,6 +32,11 @@
     animation-fill-mode: both;
 }
 
+.group-info-3_animate-back {
+    animation: directionBack 1917ms;
+    animation-fill-mode: both;
+}
+
 .justify-content_update {
     justify-content: start;
     gap: 3.8%;
@@ -39,6 +44,11 @@
 
 .w50-container_animate {
     animation: directionContainer 1917ms;
+    animation-fill-mode: both;
+}
+
+.w50-container_animate-back {
+    animation: directionContainerBack 1917ms;
     animation-fill-mode: both;
 }
 

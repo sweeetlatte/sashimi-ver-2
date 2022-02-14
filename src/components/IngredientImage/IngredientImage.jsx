@@ -51,12 +51,12 @@ export default function IngredientImage({ state }) {
                         state === "play"
                             ? "info-img left"
                             : state === "reverse"
-                            ? "info-img left-reverse"
+                            ? "info-img left-back"
                             : "info-img"
                     }
                     style={{
                         alignItems: state === "play" ? "flex-start" : "center",
-                        transition: "alignItems 1600ms ease",
+                        transition: "alignItems 1600ms ease", //need delay
                     }}
                 >
                     <img src={ingredient.image} alt={ingredient.alt} />

@@ -130,12 +130,35 @@
     animation-fill-mode: both;
 }
 
+@keyframes leftBack {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.left-back {
+    animation: leftBack 1917ms;
+    animation-fill-mode: both;
+}
+
 @keyframes direction {
     from {
-        transform: translate(0);
+        transform: rotate(0);
     }
     to {
         transform: rotate(90deg);
+    }
+}
+
+@keyframes directionBack {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0);
     }
 }
 
@@ -145,6 +168,15 @@
     }
     to {
         transform: translate(-64.5vw, 1vw);
+    }
+}
+
+@keyframes directionContainerBack {
+    from {
+        transform: translate(-64.5vw, 1vw);
+    }
+    to {
+        transform: translate(0);
     }
 }
 
