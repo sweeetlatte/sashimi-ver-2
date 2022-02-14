@@ -23,12 +23,10 @@ function App() {
             setTimeout(function () {
                 setJustifyContent("justify-content_update");
             }, 50);
-        }
-        else if (control === "reverse") {
+        } else if (control === "reverse") {
             setTimeout(function () {
                 setJustifyContent("");
             }, 200);
-            
         }
     }
 
@@ -151,7 +149,13 @@ function App() {
                 }}
             >
                 <div
-                    className={control === "play" ? "row slide-left" : "row"}
+                    className={
+                        control === "play"
+                            ? "row slide-left"
+                            : control === "reverse"
+                            ? "row slide-right"
+                            : "row"
+                    }
                     style={{
                         backgroundColor: "#303238",
                         justifyContent: "flex-end",

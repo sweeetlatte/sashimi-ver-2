@@ -195,6 +195,21 @@
     animation-fill-mode: both;
 }
 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+.slide-right {
+    animation: slideRight 2000ms;
+    animation-fill-mode: both;
+}
+
+
 /* IngredientImage rotate */
 @keyframes rotate {
     0% {
