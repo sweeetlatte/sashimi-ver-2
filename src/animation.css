@@ -276,16 +276,20 @@
 @keyframes slideRight-3 {
     0% {
         opacity: 1;
-        /* transform: translateX(-48.5vw); */
+        transform: translateX(-48.5vw);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-48.5vw);
     }
     100% {
         opacity: 0;
-        /* transform: translateX(0vw); */
+        transform: translateX(0vw);
     }
 }
 
 .slide-right-3 {
-    animation: slideRight-3 1400ms;
+    animation: slideRight-3 2000ms;
     animation-fill-mode: both;
 }
 

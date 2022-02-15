@@ -5,7 +5,7 @@ import "./instruction.css"
 export default function Instruction() {
     return (
         <div className="group-instruction">
-            <div className="instruction-title">Step 1</div>
+            <div className="instruction-title" style={{paddingTop: "12%"}}>Step 1</div>
             <div className="instruction-content">
                 Purchase 4 oz (110 g) each of sushi grade salmon, tuna, and
                 yellowtail. The fish you use to make sashimi needs to be

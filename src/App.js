@@ -40,7 +40,6 @@ function App() {
         >
             <div
                 className="container"
-                style={{  }}
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
