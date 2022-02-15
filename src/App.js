@@ -152,9 +152,9 @@ function App() {
                     <div
                         className={
                             control === "play"
-                                ? "w25 slide-left"
+                                ? "w25 slide-left-2"
                                 : control === "reverse"
-                                ? "w25 slide-right"
+                                ? "w25 slide-right-2"
                                 : "w25"
                         }
                     >
