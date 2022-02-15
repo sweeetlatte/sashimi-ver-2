@@ -5,7 +5,7 @@
     color: white;
     margin-top: 81%;
     height: 57.8vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .group-instruction .instruction-title {
@@ -39,6 +39,11 @@
     top: 53vh;
 }
 
+.abcxyz {
+    overflow-y: scroll;
+    transition: 1300ms;
+}
+
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -58,9 +63,9 @@
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    /* background: #626364a4; */
-}
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #626364a4;
+} */
 
 @media (min-width: 1024px) and (max-width: 1365px) {
     .group-instruction {

@@ -345,6 +345,52 @@
     animation-fill-mode: both;
 }
 
+/* Instruction Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(15vw);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 833ms;
+    animation-fill-mode: both;
+    animation-delay: 1300ms;
+}
+
+.fade-in-right-2 {
+    animation: fadeInRight 833ms;
+    animation-fill-mode: both;
+    animation-delay: 1500ms;
+}
+
+@keyframes fadeOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(15vw);
+        opacity: 0;
+    }
+}
+
+.fade-out-right {
+    animation: fadeOutRight 833ms;
+    animation-fill-mode: both;
+}
+
+.fade-out-right-2 {
+    animation: fadeOutRight 833ms;
+    animation-fill-mode: both;
+    animation-delay: 200ms;
+}
+
 /* Media Query */
 @media (min-width: 1024px) and (max-width: 1365px) {
     .up-left {

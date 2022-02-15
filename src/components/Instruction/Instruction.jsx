@@ -20,20 +20,44 @@ export default function Instruction({ state }) {
     useEffect(() => updateOverflow(), [state]);
 
     return (
-        <div className="group-instruction">
+        <div className={`group-instruction ${overflow}`}>
             <div className={`${shadow}`}></div>
             <div style={{ paddingTop: "12%", paddingBottom: "12%" }}>
-                <div className="instruction-title" style={{}}>
+                <div
+                    className={
+                        state === "play"
+                            ? "fade-in-right instruction-title"
+                            : state === "reverse"
+                            ? "fade-out-right-2 instruction-title"
+                            : "instruction-title"
+                    }
+                >
                     Step 1
                 </div>
-                <div className="instruction-content">
+                <div
+                    className={
+                        state === "play"
+                            ? "fade-in-right instruction-content"
+                            : state === "reverse"
+                            ? "fade-out-right-2 instruction-content"
+                            : "instruction-content"
+                    }
+                >
                     Purchase 4 oz (110 g) each of sushi grade salmon, tuna, and
                     yellowtail. The fish you use to make sashimi needs to be
                     incredibly fresh. Go to a fish market and purchase sushi
                     grade salmon, tuna, or yellowtail. Do not buy fish that is
                     not considered safe to eat raw!
                 </div>
-                <div className="instruction-content">
+                <div
+                    className={
+                        state === "play"
+                            ? "fade-in-right-2 instruction-content"
+                            : state === "reverse"
+                            ? "fade-out-right instruction-content"
+                            : "instruction-content"
+                    }
+                >
                     If there is no fish market in your area, try visiting an
                     Asian market that has a seafood counter or ask the employees
                     at your grocery store’s fish counter if they have any sushi
