@@ -193,10 +193,10 @@
         transform: translateX(0vw);
     }
     43.76% {
-        transform: translateX(var(--translateX));
+        transform: translateX(-101vw);
     }
     55% {
-        transform: translateX(var(--translateX));
+        transform: translateX(-101vw);
     }
     100% {
         transform: translateX(-151vw);
@@ -204,7 +204,6 @@
 }
 
 .slide-left {
-    --translateX: -101vw;
     animation: slideLeft 2934ms;
     animation-fill-mode: both;
 }
@@ -420,9 +419,5 @@
 
     .rotate, .rotate-back {
         --translate: 92px, -65px;
-    }
-
-    .slide-left, .slide-right {
-        --translateX: -101.5vw;
     }
 }
