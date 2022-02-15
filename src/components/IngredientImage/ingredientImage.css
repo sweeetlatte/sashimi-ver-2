@@ -1,8 +1,9 @@
 .group-info-3 {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     right: 2%;
-    padding-top: 3.3%;
+    padding-top: 6.3%;
+    gap: 8%;
 }
 
 .group-info-3 .info-img {
@@ -64,7 +65,7 @@
     }
 }
 
-@media (min-width: 1366px) and (max-width: 1728px) {
+@media (min-width: 1366px) and (max-width: 1728px) {    
     .group-info-3 .info-img {
         width: 70px;
         height: 70px;
