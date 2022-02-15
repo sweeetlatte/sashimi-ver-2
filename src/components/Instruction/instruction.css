@@ -16,7 +16,7 @@
 .group-instruction .instruction-content {
     line-height: 2.1;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.45px;
     padding-top: 42px;
     font-weight: lighter;
 }
