@@ -156,7 +156,7 @@ function App() {
                                 : "w25"
                         }
                     >
-                        <Instruction />
+                        <Instruction state={control} />
                     </div>
                 </div>
                 <div

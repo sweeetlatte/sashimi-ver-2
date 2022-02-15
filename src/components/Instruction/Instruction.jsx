@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import "./instruction.css"
+import "./instruction.css";
 
-export default function Instruction() {
+export default function Instruction({ state }) {
+    const [overflow, setOverflow] = useState("");
+    const [shadow, setShadow] = useState("");
+
+    function updateOverflow() {
+        if (state === "play") {
+            setTimeout(function () {
+                setOverflow("abcxyz");
+                setShadow("shadow");
+            }, 1933);
+        } else if (state === "reverse") {
+            setOverflow("");
+            setShadow("");
+        }
+    }
+    useEffect(() => updateOverflow(), [state]);
+
     return (
         <div className="group-instruction">
-            <div className="instruction-title" style={{paddingTop: "12%"}}>Step 1</div>
+            <div className={`${shadow}`}></div>
+            <div className="instruction-title" style={{ paddingTop: "12%" }}>
+                Step 1
+            </div>
             <div className="instruction-content">
                 Purchase 4 oz (110 g) each of sushi grade salmon, tuna, and
                 yellowtail. The fish you use to make sashimi needs to be
@@ -24,7 +43,7 @@ export default function Instruction() {
                 making sashimi and ask them to cut it into a sashimi block so
                 that you only have to purchase what you need
             </div>
-            <div style={{ paddingTop: "48%" }}>
+            <div style={{ paddingTop: "48%",paddingBottom: "12%" }}>
                 <div className="instruction-title">Step 2</div>
                 <div className="instruction-content">
                     Choose fresh vegetables to pair with sashimi. Sashimi is
@@ -39,6 +58,7 @@ export default function Instruction() {
                     <br /> Shiso leaves
                 </div>
             </div>
+            <div className={`${shadow}-reverse`}></div>
         </div>
     );
 }
