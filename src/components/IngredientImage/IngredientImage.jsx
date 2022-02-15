@@ -56,7 +56,7 @@ export default function IngredientImage({ state }) {
                     }
                     style={{
                         alignItems: state === "play" ? "flex-start" : "center",
-                        transition: "alignItems 1600ms ease", //need delay
+                        transition: "alignItems 1600ms ease",
                     }}
                 >
                     <img src={ingredient.image} alt={ingredient.alt} />
