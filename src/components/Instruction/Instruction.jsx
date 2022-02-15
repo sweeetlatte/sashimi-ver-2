@@ -22,7 +22,7 @@ export default function Instruction({ state }) {
     return (
         <div className={`group-instruction ${overflow}`}>
             <div className={`${shadow}`}></div>
-            <div style={{ paddingTop: "12%", paddingBottom: "12%" }}>
+            <div style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>
                 <div
                     className={
                         state === "play"

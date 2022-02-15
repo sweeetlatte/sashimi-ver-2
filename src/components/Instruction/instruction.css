@@ -3,8 +3,10 @@
 .group-instruction {
     padding-right: 20%;
     color: white;
-    margin-top: 81%;
+    margin-top: 35.5vh;
     height: 57.8vh;
+    width: 40vw;
+    animation-fill-mode: both;
     overflow: hidden;
 }
 
@@ -14,6 +16,7 @@
 }
 
 .group-instruction .instruction-content {
+    width: 20vw;
     line-height: 2.1;
     font-size: 14px;
     letter-spacing: 0.45px;
@@ -23,7 +26,7 @@
 
 .shadow {
     height: 5vh;
-    width: 95%;
+    width: 21vw;
     position: absolute;
     background: linear-gradient(#303238, transparent);
     z-index: 5;
@@ -32,7 +35,7 @@
 
 .shadow-reverse {
     height: 5vh;
-    width: 95%;
+    width: 21vw;
     position: absolute;
     background: linear-gradient(transparent, #303238);
     z-index: 5;
@@ -41,7 +44,8 @@
 
 .abcxyz {
     overflow-y: scroll;
-    transition: 1300ms;
+    transition: overflow-y 1300ms;
+    width: 23vw;
 }
 
 /* Scrollbar */
@@ -70,6 +74,7 @@
 @media (min-width: 1024px) and (max-width: 1365px) {
     .group-instruction {
         height: 44.4vh;
+        margin-top: 23.5vh;
     }
 
     .shadow-reverse {
@@ -87,9 +92,7 @@
     }
 
     .group-instruction .instruction-content {
-        line-height: 2.4;
         font-size: 9px;
-        letter-spacing: 0.9px;
         padding-top: 26px;
     }
 }
