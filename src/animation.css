@@ -147,18 +147,25 @@
 @keyframes direction {
     from {
         transform: rotate(0);
+        width: 100%;
     }
     to {
         transform: rotate(90deg);
+        width: 750px;
+        gap: var(--gap);
     }
 }
 
 @keyframes directionBack {
     from {
         transform: rotate(90deg);
+        width: 750px;
+        gap: var(--gap);
     }
     to {
         transform: rotate(0);
+        width: 100%;
+        gap: 8%;
     }
 }
 
@@ -167,13 +174,13 @@
         transform: translate(0);
     }
     to {
-        transform: translate(-64.5vw, 1vw);
+        transform: translate(var(--translate));
     }
 }
 
 @keyframes directionContainerBack {
     from {
-        transform: translate(-64.5vw, 1vw);
+        transform: translate(var(--translate));
     }
     to {
         transform: translate(0);
@@ -192,7 +199,7 @@
         transform: translateX(-100vw);
     }
     100% {
-        transform: translateX(-148vw);
+        transform: translateX(-151vw);
     }
 }
 
@@ -263,7 +270,7 @@
         opacity: 0.9;
     }
     100% {
-        transform: translateX(-48.5vw);
+        transform: translateX(-51.1vw);
         opacity: 1;
     }
 }
@@ -276,11 +283,11 @@
 @keyframes slideRight-3 {
     0% {
         opacity: 1;
-        transform: translateX(-48.5vw);
+        transform: translateX(-51.1vw);
     }
     50% {
         opacity: 1;
-        transform: translateX(-48.5vw);
+        transform: translateX(-51.1vw);
     }
     100% {
         opacity: 0;
@@ -296,40 +303,42 @@
 /* IngredientImage rotate */
 @keyframes rotate {
     0% {
-        transform: translateX(0px) translateY(0px);
+        transform: translate(0px, 0px);
     }
     25% {
-        transform: translateX(50px) translateY(-22px);
+        transform: translate(50px, -22px);
     }
     50% {
-        transform: translateX(70px) translateY(-45px);
+        transform: translate(70px, -45px);
     }
     100% {
-        transform: translateX(120px) translateY(-80px);
+        transform: translate(var(--translate));
     }
 }
 
 @keyframes rotateBack {
     0% {
-        transform: translateX(120px) translateY(-80px);
+        transform: translate(var(--translate));
     }
     25% {
-        transform: translateX(70px) translateY(-45px);
+        transform: translate(70px, -45px);
     }
     50% {
-        transform: translateX(50px) translateY(-22px);
+        transform: translate(50px, -22px);
     }
     100% {
-        transform: translateX(0px) translateY(0px);
+        transform: translate(0px, 0px);
     }
 }
 
 .rotate {
+    --translate: 130px, -84px;
     animation: rotate 1400ms ease-in;
     animation-fill-mode: both;
 }
 
 .rotate-back {
+    --translate: 130px, -84px;
     animation: rotateBack 1400ms ease-in;
     animation-fill-mode: both;
 }
@@ -345,6 +354,10 @@
         animation: downRight1024 1917ms;
         animation-fill-mode: both;
     }
+
+    .rotate, .rotate-back {
+        --translate: 71px, -45px;
+    }
 }
 
 @media (min-width: 1366px) and (max-width: 1728px) {
@@ -355,5 +368,9 @@
     .down-right {
         animation: downRight1366 1917ms;
         animation-fill-mode: both;
+    }
+
+    .rotate, .rotate-back {
+        --translate: 92px, -65px;
     }
 }

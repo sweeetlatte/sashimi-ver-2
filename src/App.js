@@ -19,15 +19,15 @@ function App() {
     // const [background, setBackground] = useState(null);
 
     function update() {
-        if (control === "play") {
-            setTimeout(function () {
-                setJustifyContent("justify-content_update");
-            }, 50);
-        } else if (control === "reverse") {
-            setTimeout(function () {
-                setJustifyContent("");
-            }, 200);
-        }
+        // if (control === "play") {
+        //     setTimeout(function () {
+        //         setJustifyContent("justify-content_update");
+        //     }, 50);
+        // } else if (control === "reverse") {
+        //     setTimeout(function () {
+        //         setJustifyContent("");
+        //     }, 200);
+        // }
     }
 
     console.log("12 ", justifyContent);
@@ -186,7 +186,7 @@ function App() {
                     }
                     style={{
                         height: "100vh",
-                        width: "107%",
+                        width: "112.5%",
                         overflow: "hidden",
                     }}
                 >

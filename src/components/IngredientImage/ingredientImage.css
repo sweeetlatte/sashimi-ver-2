@@ -1,7 +1,6 @@
 .group-info-3 {
     justify-content: center;
     align-items: center;
-    right: 2%;
     padding-top: 6.3%;
     gap: 8%;
 }
@@ -22,18 +21,21 @@
 }
 
 .info-img > div {
-    padding-top: 19px;
+    /* padding-left: 11%; */
+    padding-top: 24%;
     font-weight: 700;
     letter-spacing: 0.2px;
     color: #545454;
 }
 
 .group-info-3_animate {
+    --gap: 4.8%;
     animation: direction 1917ms;
     animation-fill-mode: both;
 }
 
 .group-info-3_animate-back {
+    --gap: 4.8%;
     animation: directionBack 1917ms;
     animation-fill-mode: both;
 }
@@ -44,11 +46,13 @@
 }
 
 .w50-container_animate {
+    --translate: -58.3vw, -8.2vw;
     animation: directionContainer 1917ms;
     animation-fill-mode: both;
 }
 
 .w50-container_animate-back {
+    --translate: -58.3vw, -8.2vw;
     animation: directionContainerBack 1917ms;
     animation-fill-mode: both;
 }
@@ -61,11 +65,18 @@
 
     .info-img > div {
         font-size: 9px;
-        padding-top: 8px;
+    }
+
+    .w50-container_animate, .w50-container_animate-back {
+        --translate: -75.3vw, -8.2vw;
+    }
+
+    .group-info-3_animate, .group-info-3_animate-back {
+        --gap: 2.5%;
     }
 }
 
-@media (min-width: 1366px) and (max-width: 1728px) {    
+@media (min-width: 1366px) and (max-width: 1728px) {
     .group-info-3 .info-img {
         width: 70px;
         height: 70px;
@@ -73,7 +84,14 @@
 
     .info-img > div {
         font-size: 12px;
-        padding-top: 7px;
         letter-spacing: 0.05px;
+    }
+
+    .w50-container_animate, .w50-container_animate-back {
+        --translate: -66vw, -8.2vw;
+    }
+
+    .group-info-3_animate, .group-info-3_animate-back {
+        --gap: 3.1%;
     }
 }
