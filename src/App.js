@@ -168,7 +168,7 @@ function App() {
                             : ""
                     }
                     style={{
-                        width: "100vw",
+                        width: "101vw",
                         height: "100%",
                         backgroundColor: "#303238",
                         justifyContent: "flex-end",

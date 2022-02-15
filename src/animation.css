@@ -204,7 +204,7 @@
 }
 
 .slide-left {
-    --translateX: -100vw;
+    --translateX: -101vw;
     animation: slideLeft 2934ms;
     animation-fill-mode: both;
 }
@@ -225,7 +225,7 @@
 }
 
 .slide-right {
-    --translateX: -100vw;
+    --translateX: -101vw;
     animation: slideRight 2934ms;
     animation-fill-mode: both;
 }
@@ -377,6 +377,6 @@
     }
 
     .slide-left, .slide-right {
-        --translateX: -101vw;
+        --translateX: -101.5vw;
     }
 }
