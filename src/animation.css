@@ -185,18 +185,30 @@
     0% {
         transform: translateX(0vw);
     }
-    100% {
+    43.76% {
         transform: translateX(-100vw);
+    }
+    55% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(-148vw);
     }
 }
 
 .slide-left {
-    animation: slideLeft 2000ms;
+    animation: slideLeft 2934ms;
     animation-fill-mode: both;
 }
 
 @keyframes slideRight {
     0% {
+        transform: translateX(-148vw);
+    }
+    43.76% {
+        transform: translateX(-100vw);
+    }
+    55% {
         transform: translateX(-100vw);
     }
     100% {
@@ -205,7 +217,7 @@
 }
 
 .slide-right {
-    animation: slideRight 2000ms;
+    animation: slideRight 2934ms;
     animation-fill-mode: both;
 }
 
@@ -235,6 +247,45 @@
 
 .slide-right-2 {
     animation: slideRight-2 2000ms;
+    animation-fill-mode: both;
+}
+
+/* Instruction Animation */
+@keyframes slideLeft-3 {
+    0% {
+        transform: translateX(0vw);
+        opacity: 0;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    95% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateX(-48.5vw);
+        opacity: 1;
+    }
+}
+
+.slide-left-3 {
+    animation: slideLeft-3 1200ms;
+    animation-fill-mode: both;
+}
+
+@keyframes slideRight-3 {
+    0% {
+        opacity: 1;
+        /* transform: translateX(-48.5vw); */
+    }
+    100% {
+        opacity: 0;
+        /* transform: translateX(0vw); */
+    }
+}
+
+.slide-right-3 {
+    animation: slideRight-3 1400ms;
     animation-fill-mode: both;
 }
 

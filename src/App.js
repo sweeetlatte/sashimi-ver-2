@@ -15,10 +15,10 @@ import cooking from "../src/assets/images/cooking.jpg";
 
 function App() {
     const [control, setControl] = useState(null);
-    // const [background, setBackground] = useState(null);
     const [justifyContent, setJustifyContent] = useState("");
+    // const [background, setBackground] = useState(null);
 
-    function updateClassHide() {
+    function update() {
         if (control === "play") {
             setTimeout(function () {
                 setJustifyContent("justify-content_update");
@@ -31,7 +31,7 @@ function App() {
     }
 
     console.log("12 ", justifyContent);
-    useEffect(() => updateClassHide(), [control]);
+    useEffect(() => update(), [control]);
 
     return (
         <div
@@ -44,11 +44,10 @@ function App() {
                 onClick={() => {
                     if (control !== "play") {
                         setControl("play");
-                        // setBackground("grey");
-                        updateClassHide();
+                        update();
                     } else {
                         setControl("reverse");
-                        // setBackground("white");
+                        update();
                     }
                 }}
             >
@@ -80,7 +79,7 @@ function App() {
                                 : "w50"
                         }
                         style={{
-                            zIndex: 1,
+                            zIndex: 2,
                             position: "absolute",
                             left: "48.5%",
                         }}
@@ -121,7 +120,7 @@ function App() {
                         }
                         style={{
                             position: "absolute",
-                            zIndex: 1,
+                            zIndex: 2,
                             paddingLeft: "43%",
                         }}
                     >
@@ -175,17 +174,22 @@ function App() {
                         backgroundColor: "#303238",
                         justifyContent: "flex-end",
                         position: "absolute",
+                        zIndex: 1,
                     }}
                 ></div>
                 <div
                     className={
                         control === "play"
-                            ? "w51 slide-left"
+                            ? "w51 slide-left-3"
                             : control === "reverse"
-                            ? "w51 slide-right"
+                            ? "w51 slide-right-3"
                             : "w51"
                     }
-                    style={{ height: "100vh", overflow: "hidden" }}
+                    style={{
+                        height: "100vh",
+                        width: "107%",
+                        overflow: "hidden",
+                    }}
                 >
                     <img
                         style={{ width: "100%" }}
