@@ -30,13 +30,14 @@
 
 .group-info-3_animate {
     --gap: 4.8%;
-    animation: direction 1917ms;
+    animation: direction 1950ms;
     animation-fill-mode: both;
 }
 
 .group-info-3_animate-back {
     --gap: 4.8%;
-    animation: directionBack 1917ms;
+    animation: directionBack 1950ms;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 
@@ -47,13 +48,14 @@
 
 .w50-container_animate {
     --translate: -58.3vw, -8.2vw;
-    animation: directionContainer 1917ms;
+    animation: directionContainer 1950ms;
     animation-fill-mode: both;
 }
 
 .w50-container_animate-back {
     --translate: -58.3vw, -8.2vw;
-    animation: directionContainerBack 1917ms;
+    animation: directionContainerBack 1950ms;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 

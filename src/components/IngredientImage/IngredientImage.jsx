@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./ingredientImage.css";
 
@@ -9,7 +9,19 @@ import clam from "../../assets/images/clam.png";
 import octopus from "../../assets/images/octopus.png";
 
 export default function IngredientImage({ state }) {
-    console.log(state);
+    const [alignItems, setAlignItems] = useState("center");
+
+    function updateAlignItems() {
+        if (state === "play") {
+            setAlignItems("flex-start");
+        } else if (state === "reverse") {
+            setTimeout(function () {
+                setAlignItems("center");
+            }, 1000);
+        }
+    }
+    useEffect(() => updateAlignItems(), [state]);
+
     const ingredients = [
         {
             id: 0,
@@ -55,15 +67,14 @@ export default function IngredientImage({ state }) {
                             : "info-img"
                     }
                     style={{
-                        alignItems: state === "play" ? "flex-start" : "center",
-                        transition: "alignItems 1600ms ease",
+                        alignItems: `${alignItems}`,
                     }}
                 >
                     <img src={ingredient.image} alt={ingredient.alt} />
                     <div
                         style={{
                             color: state === "play" ? "white" : "#545454",
-                            transition: "color 1600ms ease",
+                            transition: "color 2000ms ease-in-out",
                         }}
                         className={
                             state === "play"

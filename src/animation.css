@@ -20,7 +20,7 @@
 }
 
 .fade-out-left {
-    animation: fadeOutLeft 858ms;
+    animation: fadeOutLeft 1100ms;
     animation-fill-mode: both;
 }
 
@@ -40,10 +40,10 @@
 }
 
 .in-left {
-    animation-delay: 1417ms; /* after background's animation */
     animation-name: inLeft;
-    animation-duration: 858ms;
+    animation-duration: 900ms;
     animation-fill-mode: both;
+    animation-delay: 1650ms;
 }
 
 /* up-left */
@@ -63,7 +63,7 @@
 .up-left {
     --left: 1%;
     --top: -45%;
-    animation: upLeft 1917ms;
+    animation: upLeft 1950ms;
     animation-fill-mode: both;
 }
 
@@ -82,9 +82,10 @@
 }
 
 .down-right {
-    --left: 3%;
-    --top: -48%;
-    animation: downRight 1917ms;
+    --left: 1%;
+    --top: -45%;
+    animation: downRight 1950ms;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 
@@ -114,6 +115,7 @@
 
 .left-back {
     animation: leftBack 1917ms;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 
@@ -165,7 +167,7 @@
     0% {
         transform: translateX(0vw);
     }
-    43.76% {
+    40% {
         transform: translateX(-101vw);
     }
     55% {
@@ -185,7 +187,7 @@
     0% {
         transform: translateX(-148vw);
     }
-    43.76% {
+    30% {
         transform: translateX(var(--translateX));
     }
     55% {
@@ -229,9 +231,10 @@
 .slide-right-2 {
     animation: slideRight-2 2000ms;
     animation-fill-mode: both;
+    animation-delay: 533ms;
 }
 
-/* Instruction Animation */
+/* Cooking Image Animation */
 @keyframes slideLeft-3 {
     0% {
         transform: translateX(0vw);
@@ -259,7 +262,7 @@
         opacity: 1;
         transform: translateX(-51.1vw);
     }
-    50% {
+    90% {
         opacity: 1;
         transform: translateX(-51.1vw);
     }
@@ -294,10 +297,10 @@
     0% {
         transform: translate(var(--translate));
     }
-    25% {
+    50% {
         transform: translate(70px, -45px);
     }
-    50% {
+    75% {
         transform: translate(50px, -22px);
     }
     100% {
@@ -313,7 +316,8 @@
 
 .rotate-back {
     --translate: 130px, -84px;
-    animation: rotateBack 1400ms ease-in;
+    animation: rotateBack 1400ms ease-in-out;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 
@@ -355,22 +359,25 @@
 .fade-out-right {
     animation: fadeOutRight 833ms;
     animation-fill-mode: both;
+    animation-delay: 533ms;
 }
 
 .fade-out-right-2 {
     animation: fadeOutRight 833ms;
     animation-fill-mode: both;
-    animation-delay: 200ms;
+    animation-delay: 733ms;
 }
 
 /* Media Query */
 @media (min-width: 1024px) and (max-width: 1365px) {
-    .up-left, .down-right {
+    .up-left,
+    .down-right {
         --left: 0.7%;
         --top: -34%;
     }
 
-    .rotate, .rotate-back {
+    .rotate,
+    .rotate-back {
         --translate: 71px, -45px;
     }
 }
@@ -385,7 +392,8 @@
         --top: -45%;
     }
 
-    .rotate, .rotate-back {
+    .rotate,
+    .rotate-back {
         --translate: 92px, -65px;
     }
 }
