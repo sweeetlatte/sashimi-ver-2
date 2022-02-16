@@ -41,11 +41,8 @@
 
 .in-left {
     animation-delay: 1417ms; /* after background's animation */
-    -webkit-animation-name: inLeft;
     animation-name: inLeft;
-    -webkit-animation-duration: 858ms;
     animation-duration: 858ms;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
@@ -73,34 +70,8 @@
 /* down-right */
 @keyframes downRight {
     0% {
-        left: 3%;
-        top: -48%;
-        transform: rotate(180deg);
-    }
-    100% {
-        right: 0%;
-        top: 0%;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes downRight1024 {
-    0% {
-        left: 0.7%;
-        top: -34%;
-        transform: rotate(180deg);
-    }
-    100% {
-        right: 0%;
-        top: 0%;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes downRight1366 {
-    0% {
-        left: 0.8%;
-        top: -45%;
+        left: var(--left);
+        top: var(--top);
         transform: rotate(180deg);
     }
     100% {
@@ -111,6 +82,8 @@
 }
 
 .down-right {
+    --left: 3%;
+    --top: -48%;
     animation: downRight 1917ms;
     animation-fill-mode: both;
 }
@@ -392,14 +365,9 @@
 
 /* Media Query */
 @media (min-width: 1024px) and (max-width: 1365px) {
-    .up-left {
+    .up-left, .down-right {
         --left: 0.7%;
         --top: -34%;
-    }
-
-    .down-right {
-        animation: downRight1024 1917ms;
-        animation-fill-mode: both;
     }
 
     .rotate, .rotate-back {
@@ -413,8 +381,8 @@
     }
 
     .down-right {
-        animation: downRight1366 1917ms;
-        animation-fill-mode: both;
+        --left: 0.8%;
+        --top: -45%;
     }
 
     .rotate, .rotate-back {
