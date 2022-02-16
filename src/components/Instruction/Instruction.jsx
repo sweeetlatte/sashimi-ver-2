@@ -14,7 +14,9 @@ export default function Instruction({ state }) {
             }, 1933);
         } else if (state === "reverse") {
             setOverflow("");
-            setShadow("");
+            setTimeout(function () {
+                setShadow("");
+            }, 533);
         }
     }
     useEffect(() => updateOverflow(), [state]);
@@ -68,7 +70,16 @@ export default function Instruction({ state }) {
                     making sashimi and ask them to cut it into a sashimi block
                     so that you only have to purchase what you need
                 </div>
-                <div style={{ paddingTop: "48%" }}>
+                <div
+                    style={{ paddingTop: "19.5vh" }}
+                    className={
+                        state === "play"
+                            ? "fade-in-right-2"
+                            : state === "reverse"
+                            ? "fade-out-right"
+                            : ""
+                    }
+                >
                     <div className="instruction-title">Step 2</div>
                     <div className="instruction-content">
                         Choose fresh vegetables to pair with sashimi. Sashimi is

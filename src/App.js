@@ -37,19 +37,17 @@ function App() {
         <div
             className="App"
             style={{ width: "100vw", display: "flex", overflow: "hidden" }}
+            onClick={() => {
+                if (control !== "play") {
+                    setControl("play");
+                    update();
+                } else {
+                    setControl("reverse");
+                    update();
+                }
+            }}
         >
-            <div
-                className="container"
-                onClick={() => {
-                    if (control !== "play") {
-                        setControl("play");
-                        update();
-                    } else {
-                        setControl("reverse");
-                        update();
-                    }
-                }}
-            >
+            <div className="container">
                 <div className="row">
                     <div className="w13">
                         <IconMenu />
