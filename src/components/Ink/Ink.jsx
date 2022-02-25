@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./ink.css"
+import "./ink.css";
 
 import ink from "../../assets/images/ink.png";
 

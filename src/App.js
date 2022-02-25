@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import "./animation.css";
+
 import IconMenu from "./components/IconMenu/IconMenu";
 import Brand from "./components/Brand/Brand";
 import Ink from "./components/Ink/Ink";
@@ -15,23 +16,6 @@ import cooking from "../src/assets/images/cooking.jpg";
 
 function App() {
     const [control, setControl] = useState(null);
-    const [justifyContent, setJustifyContent] = useState("");
-    // const [background, setBackground] = useState(null);
-
-    function update() {
-        // if (control === "play") {
-        //     setTimeout(function () {
-        //         setJustifyContent("justify-content_update");
-        //     }, 50);
-        // } else if (control === "reverse") {
-        //     setTimeout(function () {
-        //         setJustifyContent("");
-        //     }, 200);
-        // }
-    }
-
-    console.log("12 ", justifyContent);
-    useEffect(() => update(), [control]);
 
     return (
         <div
@@ -40,10 +24,8 @@ function App() {
             onClick={() => {
                 if (control !== "play") {
                     setControl("play");
-                    update();
                 } else {
                     setControl("reverse");
-                    update();
                 }
             }}
         >
@@ -124,7 +106,7 @@ function App() {
                         <div
                             className={
                                 control === "play"
-                                    ? `row group-info-3 group-info-3_animate ${justifyContent}`
+                                    ? "row group-info-3 group-info-3_animate"
                                     : control === "reverse"
                                     ? "row group-info-3 group-info-3_animate-back"
                                     : "row group-info-3"
@@ -141,7 +123,6 @@ function App() {
                     height: "100vh",
                     width: "100vw",
                     right: "-45.5vw",
-                    // 610 / 1340
                 }}
             >
                 <div style={{ position: "absolute", zIndex: 5 }}>
