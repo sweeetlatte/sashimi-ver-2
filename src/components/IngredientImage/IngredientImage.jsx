@@ -38,8 +38,8 @@ export default function IngredientImage({ state }) {
         {
             id: 2,
             image: shrimp,
-            alt: "eel",
-            name: "Eel",
+            alt: "shrimp",
+            name: "Shrimp",
         },
         {
             id: 3,
